@@ -1,6 +1,4 @@
 package com.ssm.queue;
-
-import java.util.Queue;
 import java.util.Scanner;
 
 /**
@@ -10,8 +8,9 @@ import java.util.Scanner;
  */
 public class ArrayQueueDemo {
     public static void main(String[] args) {
+        System.out.println("测试数组模拟环形队列~~");
         //创建队列
-        ArrayQueue queue = new ArrayQueue(3);
+        CircleArray queue = new CircleArray(4);//这里设置的4其队列的有效数据最大是3
         //接受用户输入
         char key = ' ';
         Scanner scanner = new Scanner(System.in);
@@ -96,7 +95,7 @@ class ArrayQueue {
             System.out.println("队列已满不能加入数据");
             return;
         }
-        //rear++;  i++先赋值然后加1 ++1是先+1然后赋值
+        //rear++;  i++先赋值然后加1 ++i是先+1然后赋值
         arr[++rear] = n;
     }
 
