@@ -92,7 +92,7 @@ class ArrayQueue {
     public void addQueue(int n) {
         //判断队列是否已满
         if (isFull()) {
-            System.out.println("队列已满不能加入数据");
+            System.out.println("队列已满不能加入数据!");
             return;
         }
         //rear++;  i++先赋值然后加1 ++i是先+1然后赋值
