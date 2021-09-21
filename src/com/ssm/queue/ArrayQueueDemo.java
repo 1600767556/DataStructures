@@ -10,7 +10,7 @@ public class ArrayQueueDemo {
     public static void main(String[] args) {
         System.out.println("测试数组模拟环形队列~~");
         //创建队列
-        CircleArray queue = new CircleArray(4);//这里设置的4其队列的有效数据最大是3
+        ArrayQueue queue = new ArrayQueue(3);
         //接受用户输入
         char key = ' ';
         Scanner scanner = new Scanner(System.in);
