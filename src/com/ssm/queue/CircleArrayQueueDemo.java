@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class CircleArrayQueueDemo {
     public static void main(String[] args) {
         //创建队列
-        CircleArray queue = new CircleArray(4);
+        CircleArray queue = new CircleArray(4);//这里设置的4其队列的有效数据最大是3
         //接受用户输入
         char key = ' ';
         Scanner scanner = new Scanner(System.in);
