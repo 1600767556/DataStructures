@@ -26,7 +26,7 @@ public class CircleArrayQueueDemo {
                     queue.showQueue();
                     break;
                 case 'a':
-                    System.out.println("请输入一个数");
+                    System.out.println("请输入一个数 ");
                     int value = scanner.nextInt();
                     queue.addQueue(value);
                     break;
