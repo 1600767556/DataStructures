@@ -66,7 +66,7 @@ class DoubleLinkList {
 
     //添加一个节点到双向链表的最后
     public void add(HeroNode2 heroNode) {
-        //因为head节点不能动,所以需要一个辅助节点变 量temp
+        //因为head节点不能动,所以需要一个辅助节点变量temp
         HeroNode2 temp = head;
         //遍历链表,找到最后
         while (temp.next != null) {
