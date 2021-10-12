@@ -94,7 +94,7 @@ class BinarySortTree {
                         root = targetNode.left;
                     }
                 } else {
-                    if (parent!=null){
+                    if (parent != null) {
                         if (parent.left.value == value) {
                             parent.left = targetNode.right;
                         } else {
@@ -135,6 +135,25 @@ class Node {
 
     public Node(int value) {
         this.value = value;
+    }
+
+    //返回左子树的高度
+    public int leftHeight(){
+        if (left==null){
+            return 0;
+        }
+        return left.height();
+    }
+    //返回右子树的高度
+    public int rightHeight(){
+        if (right==null){
+            return 0;
+        }
+        return right.height();
+    }
+    //返回以该结点为根结点的高度
+    public int height() {
+        return Math.max(left == null ? 0 : left.height(), right == null ? 0 : right.height()) + 1;
     }
 
     /**
